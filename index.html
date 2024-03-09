@@ -788,9 +788,9 @@
             <div class="eleven-input">
               <h1>Задать вопрос юристу</h1>
               <p>Напишите ваш вопрос мы обязательно вам ответим</p>
-              <form action="">
+              <form action="https://echo.htmlacademy.ru/" method="post">
                 <textarea
-                  name=""
+                  name="text"
                   id=""
                   cols="30"
                   rows="10"
@@ -801,6 +801,7 @@
                   <label class="label">
                     <p>Номер телефона</p>
                     <input
+                      name="number"
                       type="number"
                       class="second-input"
                       placeholder="Ввод.."
@@ -809,12 +810,13 @@
                   <label class="label">
                     <p>Ваше имя</p>
                     <input
+                      name="name"
                       type="text"
                       class="third-input"
                       placeholder="Ввод.."
                     />
                   </label>
-                  <button>Отправить</button>
+                  <button type="submit">Отправить</button>
                 </div>
               </form>
               <span
