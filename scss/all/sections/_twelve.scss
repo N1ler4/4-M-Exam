@@ -1,0 +1,50 @@
+#end{
+    margin-top: 80px;
+    .container{
+        padding-left: 20px;
+        color: $base-color;
+
+
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            ul{
+                width: 270px;
+                margin-bottom: 50px;
+                li{
+                    a{
+                        color: $base-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+@media only screen and (max-width: 390px) {
+    #end{
+        margin-top: 80px;
+        .container{
+            padding-left: 0px;
+            color: $base-color;
+    
+    
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                ul{
+                    width: 175px;
+                    margin-bottom: 50px;
+                    li{
+                        a{
+                            color: $base-color;
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+    }
+}

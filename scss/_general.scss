@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Open Sans;
+  background: #fff;
+  button {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 390px) {
+  body{
+    overflow-x: hidden;
+  }
+}
+
+

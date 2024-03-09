@@ -1,0 +1,136 @@
+#second {
+  margin-bottom: 96px;
+
+  .container {
+    padding-left: 20px;
+    color: $base-color;
+
+    div {
+      h1 {
+        margin-top: 80px;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .reg-cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      .reg-card {
+        width: 270px;
+        height: 180px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        border: 1px solid $gray-border;
+
+        a {
+          color: $base-green;
+        }
+
+        #tel {
+          color: $base-color;
+        }
+      }
+    }
+  }
+}
+
+.div-none {
+  display: none;
+}
+
+@media only screen and (max-width: 390px) {
+  #second {
+    .container {
+      padding: 0;
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .reg-cards {
+      display: flex;
+      gap: 1px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      max-width: 350px;
+      .reg-card {
+        max-width: 167px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        border: 1px solid $gray-border;
+        margin-bottom: 5px;
+
+        p {
+          font-size: 14px;
+        }
+
+        a {
+          color: $base-green;
+          font-size: 14px;
+        }
+
+        #tel {
+          color: $base-color;
+        }
+      }
+    }
+    .div-none {
+      margin-top: 40px;
+      display: block;
+      position: relative;
+      width: 350px;
+      height: 291px;
+      background: $base-green;
+      padding: 30px;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+      background-image: url(../../../assets/images/woman-working-call-center\ 1.png);
+      background-size: 250px;
+      background-position: left bottom;
+
+      p {
+        background-image: url(../../../assets/images/Frame\ 982.png);
+        background-position: bottom;
+        background-size: 184px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 184px;
+        height: 69px;
+        font-size: 14px;
+        color: $white-color;
+        bottom: 60px;
+        right: 10px;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        color: $white-color;
+      }
+      a {
+        font-size: 32px;
+        font-weight: 700;
+        color: $white-color;
+      }
+    }
+  }
+}

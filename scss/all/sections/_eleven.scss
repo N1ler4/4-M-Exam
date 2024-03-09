@@ -1,0 +1,217 @@
+#eleven {
+  .container {
+    padding-left: 20px;
+    color: $base-color;
+    .eleven-flex {
+      display: flex;
+      gap: 20px;
+    }
+
+    .eleven-card {
+      margin-bottom: 10px;
+      display: flex;
+      gap: 15px;
+      padding: 10px;
+      border: 1px solid $gray-border;
+      border-radius: 20px;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+          span {
+            color: $gray-border;
+          }
+        }
+      }
+    }
+
+    .eleven-input {
+      background: $base-green;
+      padding: 40px;
+      color: $white-color;
+
+      textarea {
+        width: 100%;
+        height: 213px;
+        margin-top: 30px;
+      }
+
+      .ul-flex {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+
+        label {
+          background: $white-color;
+          padding: 7px 16px;
+
+          input {
+            border: none;
+            outline: none;
+          }
+        }
+        button {
+          background: $base-color;
+          color: $white-color;
+          border: none;
+          padding: 16px 24px;
+          border-radius: 10px;
+        }
+        p {
+          color: $lightgray-color;
+        }
+      }
+
+      span {
+        color: $gray-color;
+        font-weight: 600;
+        font-size: 12px;
+        width: 501px;
+      }
+
+      .number-ul {
+        display: flex;
+        margin-top: 30px;
+        ul {
+          margin-left: 20px;
+        }
+        span {
+          font-size: 20px;
+          font-weight: 700;
+          color: $white-color;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.eleven-button {
+  padding: 17px 36px;
+  width: 100%;
+  color: $base-green;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 390px) {
+  #eleven {
+    .container {
+      padding-left: 0px;
+      .eleven-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .eleven-card {
+        margin-bottom: 10px;
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        border: 1px solid $gray-border;
+        border-radius: 20px;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          li {
+            span {
+              color: $gray-border;
+            }
+          }
+        }
+      }
+
+      .eleven-input {
+        background: $base-green;
+        padding: 20px;
+        color: $white-color;
+
+        textarea {
+          width: 100%;
+          height: 213px;
+          margin-top: 30px;
+        }
+
+        .ul-flex {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 10px;
+
+          label {
+            background: $white-color;
+            padding: 7px 16px;
+
+            input {
+              border: none;
+              outline: none;
+              width: 100%;
+            }
+          }
+          p {
+            color: $lightgray-color;
+          }
+        }
+
+        span {
+          color: $gray-color;
+          font-weight: 600;
+          font-size: 12px;
+          width: 501px;
+        }
+
+        .number-ul {
+          ul {
+            margin-left: 20px;
+            max-width: 155px;
+
+            li {
+              width: 100%;
+              font-size: 12px;
+              font-weight: 400;
+            }
+          }
+          span {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .eleven-button {
+    padding: 17px 36px;
+    width: 100%;
+    color: $base-green;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}

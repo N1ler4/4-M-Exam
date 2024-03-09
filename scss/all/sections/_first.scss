@@ -1,0 +1,165 @@
+#first {
+  margin-bottom: 96px;
+
+  .container {
+    padding-left: 20px;
+    color: $base-color;
+
+    .pre-first a {
+      color: $lightgray-color;
+    }
+
+    .first {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        line-height: 1.5;
+      }
+
+      div {
+        max-width: 657px;
+      }
+
+      &-btn {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+
+        a {
+          color: $base-green;
+          font-size: 24px;
+          border-bottom: 1px solid $base-green;
+          font-weight: 700;
+        }
+
+        button {
+          padding: 16px 36px;
+          background: $base-green;
+          border: none;
+          color: $white-color;
+          border-radius: 10px;
+
+          &:hover {
+            background: $base-greenHover;
+          }
+
+          &:active {
+            background: $base-green;
+          }
+        }
+        p {
+          margin-top: 5px;
+          color: $lightgray-color;
+          font-size: 12px;
+        }
+      }
+      ul {
+        display: flex;
+        margin-top: 30px;
+        gap: 30px;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  .container {
+    padding-left: 0;
+    margin-left: 0 auto;
+  }
+  .pre-first {
+    margin-top: 40px;
+    font-size: 12px;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      width: 350px;
+    }
+
+    .first-p {
+      line-height: 1.5;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      width: 350px;
+    }
+
+    div {
+      max-width: 657px;
+    }
+
+    &-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 30px;
+
+      a {
+        color: $base-green;
+        font-size: 24px;
+        border-bottom: 1px solid $base-green;
+        font-weight: 700;
+      }
+
+      button {
+        padding: 0;
+        width: 350px;
+        height: 50px;
+        background: $base-green;
+        border: none;
+        color: $white-color;
+        border-radius: 10px;
+
+        &:hover {
+          background: $base-greenHover;
+        }
+
+        &:active {
+          background: $base-green;
+        }
+      }
+      p {
+        margin-top: 5px;
+        color: $lightgray-color;
+        font-size: 12px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 0px;
+      width: 360px;
+
+      li {
+        width: 160px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    
+  }
+
+  .first-img{
+    width: 235px;
+    height: 250px;
+    order: -1;
+    margin-top: 20px;
+  }
+}

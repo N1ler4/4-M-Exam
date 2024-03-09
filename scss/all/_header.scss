@@ -1,0 +1,137 @@
+header {
+  padding: 30px;
+  color: $base-color;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    top: 0px;
+    padding: 30px;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+    z-index: 8;
+
+    .header-hide{
+      display: none;
+    }
+    label{
+      width: 427px;
+      padding: 14px 20px;
+      border-radius:10px;
+      display: flex;
+      justify-content: space-between;
+      background: $gray-background;
+
+      input{
+        border:none;
+        outline:none;
+        background: transparent;
+      }
+    }
+    .header-btn{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 20px; 
+      background: $base-green;
+      color: $white-color;
+      border: none;
+      border-radius:10px;
+
+      &:hover{
+        background: $base-greenHover;
+      }
+      &:active{
+        background: $base-green;
+      }
+
+    }
+    .header-text{
+      a{
+      color: $base-color;
+      }
+    }
+  }
+}
+.after-header{
+  margin-top: 85px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: $base-color;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .btn-border {
+      border: 1px solid $gray-border;
+      padding: 10px 20px;
+      border-radius: 10px;
+
+      &:hover {
+        background: $bg-hover;
+        color: $white-color;
+      }
+
+      &:active {
+        background: $white-color;
+        color: $base-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  header {
+    padding: 30px;
+    color: $base-color;
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      width: 100%;
+      left: 0;
+      .header-hide{
+        display: block;
+        border: none;
+        background: transparent;
+      }
+      .label{
+        display: none;
+      }
+      .header-btn{
+        display: none;
+      }
+      .header-text{
+        display: none;
+      }
+      .header-buttons{
+        display: flex;
+        gap: 15px;
+      }
+    }
+  }
+  a{
+    img{
+      width: 179px;
+      height: 32px;
+
+    }
+  }
+
+  .after-header{
+    display: none;
+  }
+}

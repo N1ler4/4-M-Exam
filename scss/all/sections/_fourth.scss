@@ -1,0 +1,221 @@
+#fourth {
+  margin-top: 109px;
+  .container {
+    width: 1100px;
+    color: $base-color;
+
+    .fourth-flex {
+      display: flex;
+      align-items: center;
+      .fourth-text {
+        width: 560px;
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+
+          li {
+            span {
+              color: $base-green;
+              font-size: 28px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+    .fourth-contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 200px;
+      background: $base-green;
+      border-radius: 20px;
+      color: $white-color;
+      padding: 50px 60px;
+
+      a {
+        color: $white-color;
+        font-size: 42px;
+        font-weight: 700;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .fourth-contact_p {
+        font-size: 12px;
+        color: $lightgray-color;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      .contact-confirm {
+        display: flex;
+        gap: 16px;
+        margin-top: 16px;
+        margin-bottom: 22px;
+
+        label {
+          padding: 7px 16px;
+          background: $white-color;
+          border-radius: 10px;
+          p {
+            font-size: 12px;
+            font-weight: 400;
+            color: $lightgray-color;
+          }
+          input {
+            outline: none;
+            border: none;
+          }
+        }
+        form {
+          button {
+            padding: 7px 16px;
+            border: 1px solid $white-color;
+            background-color: $base-green;
+            color: $white-color;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background: $white-color;
+              color: $base-greenHover;
+            }
+
+            &:active {
+              background: $base-green;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #fourth {
+    margin-top: 109px;
+    .container {
+      color: $base-color;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 360px;
+      }
+      .fourth-text {
+        max-width: 340px;
+      }
+      .fourth-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fourth-text {
+          width: 560px;
+
+          ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-top: 30px;
+            max-width: 360px;
+
+            li {
+              span {
+                color: $base-green;
+                font-size: 22px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      .fourth-contact {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        background: $base-green;
+        border-radius: 20px;
+        color: $white-color;
+        padding: 20px;
+
+        a {
+          color: $white-color;
+          font-size: 36px;
+          font-weight: 700;
+        }
+        h2 {
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .fourth-contact_p {
+          font-size: 12px;
+          color: $lightgray-color;
+        }
+        h4 {
+          font-size: 18px;
+        }
+        .contact-confirm {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          margin-top: 20px;
+          margin-bottom: 22px;
+
+          label {
+            padding: 7px 16px;
+            background: $white-color;
+            border-radius: 10px;
+            p {
+              font-size: 12px;
+              font-weight: 400;
+              color: $lightgray-color;
+            }
+            input {
+              outline: none;
+              border: none;
+              width: 100%;
+            }
+          }
+          button {
+            padding: 7px 16px;
+            border: 1px solid $white-color;
+            background-color: $base-green;
+            color: $white-color;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background: $white-color;
+              color: $base-greenHover;
+            }
+
+            &:active {
+              background: $base-green;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fourth-image {
+    max-width: 340px;
+    img {
+      order: -1;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.succses {
+  height: 99.99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  color: $base-color;
+  text-align: center;
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  button {
+    padding: 16px 36px;
+    border-radius: 10px;
+    border: none;
+    color: $white-color;
+    background: $base-green;
+
+    &:hover {
+      background: $base-greenHover;
+    }
+    &:active {
+      background: $base-green;
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}

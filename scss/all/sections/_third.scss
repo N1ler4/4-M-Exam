@@ -1,0 +1,63 @@
+#third {
+  margin-top: 200px;
+
+  .container {
+    color: $base-color;
+    .third-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 5px;
+      .third-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 550px;
+        height: 180px;
+        padding: 30px;
+        border: 1px solid $gray-border;
+        border-radius: 20px;
+        .third-card-img {
+          border-radius: 100%;
+        }
+        p {
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 390px) {
+  #third {
+    .third-card-img {
+      border-radius: 100%;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .container{
+      .third-cards {
+        flex-direction: column;
+        gap: 10px;
+        .third-card {
+          display: flex;
+          flex-direction: column;
+          align-items:start;
+          justify-content: start;
+          max-width: 360px;
+          height: 190px;
+          padding: 30px;
+          gap: 10px;
+  
+          p {
+            width: 300px;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
